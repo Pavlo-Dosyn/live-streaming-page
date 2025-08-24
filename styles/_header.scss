@@ -1,0 +1,97 @@
+@use "variables" as v;
+@use "sass:color";
+@use "mixins" as m;
+@use "placeholders";
+
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: color.adjust(v.$color-white, $alpha: -0.85);
+  border-bottom: 1px solid v.$color-white;
+
+  .nav {
+    height: 50px;
+    @include m.d-flex(start, center);
+
+    &__title {
+      height: 100%;
+      width: 255px;
+      border-right: 1px solid v.$color-white;
+      @include m.d-flex(center, center);
+
+      &-link {
+        @include m.font(25px, 500, v.$color-white);
+
+        span {
+          font-weight: 700;
+        }
+
+        @extend %hover-black;
+      }
+    }
+
+    &__links {
+      flex-grow: 1;
+      white-space: nowrap;
+
+      &-list {
+        @include m.d-flex(start, center, nowrap, min(100px, 5vw));
+        padding: 0 10px 0 min(100px, 5vw);
+      }
+      .list__item {
+        &-link {
+          @include m.font(22px, 400, v.$color-white);
+
+          &:hover {
+            @extend %hover-black;
+          }
+        }
+      }
+
+      @media (max-width: v.$media_lg) {
+        .list {
+          @include m.d-flex(center, center, nowrap, min(100px, 5vw));
+          padding: 0;
+        }
+      }
+    }
+    .covid {
+      height: 100%;
+      @include m.d-flex(center, center);
+      padding: 0 30px;
+      white-space: nowrap;
+
+      border: {
+        left: 1px solid v.$color-white;
+        right: 1px solid v.$color-white;
+      }
+
+      &__link {
+        @include m.font(16px, 700, v.$color-white);
+
+        @extend %hover-black;
+      }
+    }
+
+    .globe {
+      width: 90px;
+      @include m.d-flex(center, center);
+
+      &__link {
+        &-icon {
+          fill: v.$color-white;
+          width: 27px;
+          height: 28px;
+          @extend %hover-black-icon;
+        }
+      }
+    }
+    @media (max-width: v.$media_md) {
+      .list,
+      .covid,
+      .globe {
+        display: none;
+      }
+    }
+  }
+}
