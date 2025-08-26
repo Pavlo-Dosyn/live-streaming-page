@@ -2,7 +2,15 @@
 
 %hover-black {
   &:hover {
+    cursor: pointer;
     color: v.$color-black;
+  }
+}
+
+%hover-white {
+  &:hover {
+    cursor: pointer;
+    color: v.$color-white;
   }
 }
 

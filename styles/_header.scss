@@ -21,6 +21,7 @@
 
       &-link {
         @include m.font(25px, 500, v.$color-white);
+        text-transform: uppercase;
 
         span {
           font-weight: 700;
@@ -68,8 +69,8 @@
 
       &__link {
         @include m.font(16px, 700, v.$color-white);
-
         @extend %hover-black;
+        text-transform: uppercase;
       }
     }
 
