@@ -4,6 +4,26 @@
   color: $color;
 }
 
+@mixin position(
+  $type: relative,
+  $zIndex: 1,
+  $inset: -1,
+  $top-or-bottom: top,
+  $left-or-right: left,
+  $value1: 0,
+  $value2: 0
+) {
+  position: $type;
+  z-index: $zIndex;
+
+  @if $inset > -1 {
+    inset: $inset;
+  } @else {
+    #{$top-or-bottom}: $value1;
+    #{$left-or-right}: $value2;
+  }
+}
+
 @mixin d-flex($justify: start, $align: start, $wrap: nowrap, $gap: 0) {
   display: flex;
   justify-content: $justify;

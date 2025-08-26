@@ -9,6 +9,7 @@
     />
     <link rel="icon" href="assets/favicon.png" type="image/png" />
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Live Streaming</title>
   </head>
   <body>
@@ -16,7 +17,7 @@
       <div class="container">
         <nav class="header__nav nav" aria-label="header navigation">
           <div class="nav__title">
-            <a href="#" class="nav__title-link">CLOUD <span>FLEX</span></a>
+            <a href="#" class="nav__title-link">cloud <span>flex</span></a>
           </div>
 
           <div class="nav__links">
@@ -31,7 +32,7 @@
           </div>
 
           <div class="nav__covid-wrapper covid">
-            <a href="#" class="covid__link">COVID-19 UPDATE</a>
+            <a href="#" class="covid__link">covid-19 update</a>
           </div>
 
           <div class="nav__globe-wrapper globe">
@@ -44,5 +45,37 @@
         </nav>
       </div>
     </header>
+    <main aria-label="main content">
+      <section class="hero-content" aria-label="hero section">
+        <div class="container">
+          <div class="hero">
+            <div class="hero__content">
+              <h1 class="hero__title" class="hero">when performance matters</h1>
+              <button type="button" class="hero__action-btn" class="hero">
+                Start development with us!
+              </button>
+
+              <div class="hero__notify">
+                <img
+                  src="assets/img/pigeon_alpha.png"
+                  alt="pigeon img"
+                  class="hero__notify-img"
+                />
+                <p class="hero__notify-desc">
+                  we use cookies to ensure your best experience. through your
+                  continued use of this site you accept this use. for more
+                  information, please see our privacy policy.
+                </p>
+                <button type="button" class="hero__notify-btn">accept</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
