@@ -36,7 +36,7 @@
       white-space: nowrap;
 
       &-list {
-        @include m.d-flex(start, center, nowrap, min(100px, 5vw));
+        @include m.d-flex(start, center, nowrap, row, min(100px, 5vw));
         padding: 0 10px 0 min(100px, 5vw);
       }
       .list__item {
@@ -51,7 +51,7 @@
 
       @media (max-width: v.$media_lg) {
         .list {
-          @include m.d-flex(center, center, nowrap, min(100px, 5vw));
+          @include m.d-flex(center, center, nowrap, row, min(100px, 5vw));
           padding: 0;
         }
       }

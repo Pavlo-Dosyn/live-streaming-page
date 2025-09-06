@@ -9,8 +9,7 @@
   padding: 20px 11px 0;
   border-radius: 20px;
   background-color: color.adjust(v.$color-white, $alpha: -0.85);
-  @include m.d-flex(start, center, nowrap, 10px);
-  flex-direction: column;
+  @include m.d-flex(start, center, nowrap, column, 10px);
 
   &__icon {
     width: 25px;
