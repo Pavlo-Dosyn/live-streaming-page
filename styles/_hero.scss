@@ -93,7 +93,7 @@
     height: 60px;
     background-color: color.adjust(v.$color-white, $alpha: -0.85);
     border-radius: 20px;
-    @include m.d-flex(space-between, center, nowrap, 10px);
+    @include m.d-flex(space-between, center, nowrap, row, 10px);
     padding: 0 0 0 90px;
 
     &-img {
@@ -133,8 +133,7 @@
       width: 100%;
       max-width: 450px;
       height: fit-content;
-      @include m.d-flex(start, center, nowrap);
-      flex-direction: column;
+      @include m.d-flex(start, center, nowrap, column);
       padding: 0;
 
       &-desc {

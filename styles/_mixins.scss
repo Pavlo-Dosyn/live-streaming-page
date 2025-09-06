@@ -24,10 +24,17 @@
   }
 }
 
-@mixin d-flex($justify: start, $align: start, $wrap: nowrap, $gap: 0) {
+@mixin d-flex(
+  $justify: start,
+  $align: start,
+  $wrap: nowrap,
+  $direction: row,
+  $gap: 0
+) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
   flex-wrap: $wrap;
+  flex-direction: $direction;
   gap: $gap;
 }
