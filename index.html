@@ -97,7 +97,7 @@
           </div>
         </div>
       </section>
-      <section class="work-section">
+      <section class="work-section" aria-label="work section">
         <div class="container">
           <div class="work">
             <h2
@@ -186,7 +186,7 @@
 
       <hr class="divider" />
 
-      <section class="about-section">
+      <section class="about-section" aria-label="about section">
         <div class="container">
           <div class="about">
             <div
@@ -233,7 +233,7 @@
           </div>
         </div>
       </section>
-      <section class="experience-section">
+      <section class="experience-section" aria-label="experience section">
         <div class="container">
           <div class="experience">
             <h2
@@ -304,6 +304,7 @@
         data-aos="fade-up"
         data-aos-delay="300"
         data-aos-duration="1500"
+        aria-label="testemonials section"
       >
         <div class="container">
           <div class="testemonials">
@@ -347,6 +348,58 @@
             </div>
           </div>
         </div>
+      </section>
+      <section
+        class="form-section"
+        aria-label="form section"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="1500"
+      >
+        <div class="container">
+          <div class="form-section__wrapper">
+            <form
+              action="mailto:streaming_company@gmail.com"
+              class="form"
+              aria-labelledby="form-title"
+            >
+              <label for="input-name" id="form-title" class="form__title"
+                >Ready to get started? Drop us a line!</label
+              >
+              <input
+                id="input-name"
+                type="text"
+                placeholder="Enter your name"
+                class="form__name"
+                required
+                aria-required="true"
+              />
+
+              <input
+                id="input-email"
+                type="email"
+                placeholder="Enter your email"
+                class="form__email"
+                required
+                aria-required="true"
+              />
+
+              <input
+                id="input-text"
+                type="text"
+                placeholder="What we can do for you?"
+                class="form__text"
+                required
+                aria-required="true"
+              />
+
+              <button class="form__submit-btn">Send</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="form-section__bg-cloud cloud--left"></div>
+        <div class="form-section__bg-cloud cloud--right"></div>
       </section>
     </main>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
